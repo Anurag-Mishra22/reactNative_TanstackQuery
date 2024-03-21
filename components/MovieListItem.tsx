@@ -1,0 +1,15 @@
+import { View, Text, Image } from 'react-native'
+import React from 'react'
+
+export default function MovieListItem({ movie }) {
+    return (
+        <View style={{ flex: 1 }}>
+            <Image source={{
+                uri: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+            }}
+                style={{ width: '100%', aspectRatio: 3 / 5, borderRadius: 20 }}
+            />
+            {/* <Text>{movie.title}</Text> */}
+        </View>
+    )
+}
